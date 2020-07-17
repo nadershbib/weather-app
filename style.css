@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: "Nunito",sans-serif; */
+  font-family: "Montserrat", sans-serif;
+}
+
+.wrapper {
+  text-align: center;
+  transform: translateY(125px);
+}
+#weather-header {
+  font-size: 3rem;
+  color: rgb(38, 146, 150);
+  margin-bottom: 40px;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+  font-family: "Montserrat", sans-serif;
+}
+
+#text-input {
+  /* -webkit-appearance: none; */
+  height: 40px;
+  min-width: 500px;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(8, 82, 82);
+  padding-left: 7px;
+  outline: none;
+  /* border: none; */
+}
+#text-input::placeholder {
+  color: rgb(8, 82, 82);
+  /* position: absolute; */
+  /* top: 0px; */
+  /* left: 200px; */
+  font-size: 18px;
+  /* font-style: italic; */
+  opacity: 0.3;
+}
+#text-input:focus {
+  /* border-radius: 50px; */
+  /* border: 1px; */
+}
+#submit {
+  padding: 0.5rem 1.2rem;
+  border-radius: 50px;
+  font-weight: bold;
+  color: rgb(83, 70, 70);
+  font-size: 16px;
+  background-color: rgb(255, 255, 255);
+  transition: all 0.4s ease-in-out;
+  outline: none;
+}
+#submit:hover {
+  box-shadow: 0px 0px 5px rgb(29, 155, 155);
+  cursor: pointer;
+  background-color: rgb(38, 146, 150);
+  color: rgb(255, 255, 255);
+}
+
+#span-name {
+  font-size: 20px;
+  font-weight: 600;
+  /* margin-right: 39px; */
+  /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+}
+#span-temp {
+  font-size: 20px;
+  font-weight: 600;
+  /* margin-left: 59px; */
+}
+#span-description {
+  font-size: 20px;
+  font-weight: 600;
+  /* margin-left: 51px; */
+}
+p {
+  margin-top: 30px;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-size: 18.75px;
+  font-style: italic;
+  color: #1c2b48;
+  white-space: pre;
+}
+
+hr {
+  width: 500px;
+  margin-left: -2%;
+}
+.display {
+  margin-right: 33%;
+  margin-top: 30px;
+}
+span {
+  color: rgb(16, 100, 100);
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.cn1,
+.cn2,
+.cn3 {
+  margin: 25px;
+  text-align: left;
+  margin-left: 45%;
+}
+.push {
+  margin-left: 51px;
+}
+.push2 {
+  margin-left: 61px;
+}
+
+body {
+  background: url("Imgur.jpg") no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+}
+.input {
+  display: flex;
+  flex-wrap: no-wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* @media screen and(max-width:1024px){
+    .display{
+        margin-right: 51%;
+    }
+} */
+
+
+.image {
+  width: 1.5rem;
+  height: 1.4rem;
+  position: relative;
+  top: 3px;
+}
+
+
+
+
+/* @media screen and (max-width: 1290px) {
+  .display {
+    margin-right: 40%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .display {
+    margin-right: 51%;
+  }
+} */
+
+/* MOTO G4 */
+
+@media only screen and (max-width: 640px){
+
+.input{
+  /* margin-left: 3%; */
+}
+#text-input{
+  min-width: 0;
+  /* margin-left: 11%; */
+}
+#submit{
+  padding:0.5rem 1.4rem; 
+}
+#weather-header{
+  margin-left: 0%;
+  width: 101%;
+}
+
+.display{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  right: -5px;
+}
+.cn1,.cn2,.cn3{
+  /* margin: 18px; */
+  margin-left: 0;
+}
+hr{
+  width: 330px;
+}
+
+}
+
+@media only screen and (max-width: 415px){
+
+  .input{
+    /* margin-left: 3%; */
+  }
+  #text-input{
+    min-width: 0;
+    width: 72%;
+    /* margin-left: 11%; */
+  }
+  #submit{
+    padding:0.5rem 1.4rem; 
+  }
+  #weather-header{
+    margin-left: 0%;
+    width: 101%;
+  }
+  
+  .display{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    right: -5px;
+  }
+  .cn1,.cn2,.cn3{
+    /* margin: 18px; */
+    margin-left: 0;
+  }
+  hr{
+    width: 354px;
+  }
+  
+  }
+
+
+  @media only screen and (max-width: 320px){
+
+    .input{
+      /* margin-left: 3%; */
+      margin-right: -26px;
+    }
+    #text-input{
+      min-width: 0;
+      width: 72%;
+      
+      /* margin-left: 11%; */
+    }
+    #submit{
+      padding:0.5rem 1.4rem; 
+    }
+    #weather-header{
+      margin-left: 0%;
+      width: 109%;
+    }
+    
+    .display{
+      width: 112%;
+      height: 100%;
+      position: relative;
+      right: -5px;
+    }
+    .cn1,.cn2,.cn3{
+      /* margin: 18px; */
+      margin-left: 0;
+    }
+    hr{
+      width: 354px;
+    }
+    
+    }
+
+

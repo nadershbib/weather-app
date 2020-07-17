@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1 id="weather-header">Weather App</h1>
+     
+      <div class="input">
+        <!-- <input type="text" id="text-input" placeholder=" enter a city name.." /> -->
+        <input type="text"id="text-input" placeholder="enter a city name.."/>
+        <input type="submit" id="submit" />
+      </div>
+      <div class="display">
+        <div class="cn1">
+          <span id="span-name">Name:</span>
+          <!-- <div class="cp1"> -->
+          <p id="name"></p>
+          <hr />
+        </div>
+
+        <div class="cn2">
+          <div class="cd2">
+            <span id="span-temp">Temperature:</span>
+
+            <p id="temp"></p>
+          </div>
+          <hr />
+        </div>
+       
+        <div class="cn3">
+          <div class="cd">
+            <span id="span-description" class="">Description:</span>
+
+            <p id="description"></p><img id="image" />
+          </div>
+          <hr />
+        </div>
+      </div>
+
+      <!-- <div class="weather-icon"><img id="image" /></div> -->
+    </div>
+    <!-- AIzaSyA3YujKgBKXC6nhRLgPKdu89QJ8Euyj7Kc -->
+   
+    <script src="app.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key= AIzaSyA3YujKgBKXC6nhRLgPKdu89QJ8Euyj7Kc&libraries=places&callback=autocompletes"></script>
+    
+  </body>
+</html>
