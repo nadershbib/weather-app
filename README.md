@@ -1,11 +1,11 @@
 <h1>Weather App</h1>
-
+<img src="weather app.png" />
 <h1>
     Overview
 </h1>
 
 <p>
-   This web application retrieves live weather temperature in any city in the world.
+   This web application retrieves live weather temperature in any city in the world with the help of the openweathermap free API and is made responsive on all devices and tabs.
 </p>
 
 <h1>How to Use</h1>
